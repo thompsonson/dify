@@ -26,4 +26,6 @@ jobs:
         run: pip install -r ./api/requirements.txt
 
       - name: Run pytest
-        run: pytest ./api/tests/integration_tests/tools/
+        run: |
+          export PYTHONPATH=$(pwd)/api:$PYTHONPATH
+          pytest ./api/tests/integration_tests/tools/
