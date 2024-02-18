@@ -1,6 +1,9 @@
 name: Run Tool Pytest
 
 on:
+  push:
+    # only trigger on branches, not on tags
+    branches: '**'
   pull_request:
     branches:
       - main
