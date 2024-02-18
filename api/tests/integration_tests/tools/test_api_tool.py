@@ -1,7 +1,6 @@
 from unittest.mock import Mock
 
 import pytest
-
 from core.tools.entities.common_entities import I18nObject
 from core.tools.entities.tool_bundle import ApiBasedToolBundle
 from core.tools.entities.tool_entities import ToolParameter

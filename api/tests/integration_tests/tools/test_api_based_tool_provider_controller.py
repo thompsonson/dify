@@ -1,7 +1,9 @@
 import pytest
+from core.tools.entities.tool_entities import (ApiProviderAuthType,
+                                               ToolProviderCredentials)
 
-from core.tools.entities.tool_entities import ApiProviderAuthType, ToolProviderCredentials
-from core.tools.provider.api_tool_provider import ApiBasedToolProviderController
+from api.core.tools.provider.api_tool_provider import \
+    ApiBasedToolProviderController
 
 
 @pytest.mark.parametrize(

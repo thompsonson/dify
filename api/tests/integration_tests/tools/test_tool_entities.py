@@ -1,9 +1,8 @@
 import pytest
 from pydantic import ValidationError
 
-from core.tools.entities.common_entities import I18nObject
-from core.tools.entities.tool_entities import ToolProviderCredentials
-
+from api.core.tools.entities.common_entities import I18nObject
+from api.core.tools.entities.tool_entities import ToolProviderCredentials, ToolCredentialsOption
 
 def test_tool_provider_credentials_creation():
     """Test the successful creation of a ToolProviderCredentials instance."""
